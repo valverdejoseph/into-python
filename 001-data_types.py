@@ -35,3 +35,5 @@ bool(1)
 #True
 bool(0)
 #False
+
+#Note: strings can be represented with single quotes ('1.0') or double quotes ("2.0"), but you can't mix both ("1.0')
