@@ -37,3 +37,35 @@ my_new_list[1:2] #[('a', 'vaca', 'arm')]
 #To concatenate, add '+':
 my_renew_list=my_list+[0]
 my_renew_list #['hola', 9, 4, 0]
+#To add new elements, .extend([]):
+my_list.extend([1.8, 'hace'])
+my_list #['hola', 9, 4, 1.8, 'hace']
+#To add one element, .append():
+my_list.append(False)
+my_list.append([1,2,3])
+my_list #['hola', 9, 4, 1.8, 'hace', False, [1, 2, 3]]
+#To modify one element, use indexing:
+my_list[1]=20
+my_list #['hola', 20, 4, 1.8, 'hace', False, [1, 2, 3]]
+#To delete an element, del():
+del(my_list[4])
+my_list #['hola', 20, 4, 1.8, False, [1, 2, 3]]
+#To convert a string to a list, .split():
+'hola, ¿qué haces?'.split() #['hola,', '¿qué', 'haces?']
+#without an argument, the separation is by a space
+'1, 2, 3, 4'.split(',') #['1', ' 2', ' 3', ' 4']
+#If a new list is defined with a created list,
+#both reference the same elements, also called Aliasing,
+#with the possibility of changing elements
+other_list=my_list
+other_list[4]=True
+my_list #['hola', 20, 4, 1.8, True, [1, 2, 3]]
+#To clone a list, [:]:
+your_list=my_list[:]
+your_list[4]='Undefined'
+my_list #['hola', 20, 4, 1.8, True, [1, 2, 3]]
+your_list #['hola', 20, 4, 1.8, 'Undefined', [1, 2, 3]]
+#Both lists are independent
+
+#To get more info on data structure, use help():
+help(your_list) #to more help, press 'h'. to exit, press 'q'
