@@ -24,6 +24,9 @@ tup_remix=(tup,my_tup,-1.1)
 tup_remix #(('a', 'vaca', 'arm'), (10, 'tuple', 0, -1.4, True), -1.1)
 tup_remix[0] #('a', 'vaca', 'arm')
 tup_remix[0][1] #'vaca'
+#To find the first index of an existing element, .index():
+tup.index('a') #0
+#Otherwise, ValueError
 
 #List: a mutable sequence written with commas and square brackets
 my_list=['hola',9,4]
