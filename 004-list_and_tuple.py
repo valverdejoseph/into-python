@@ -1,4 +1,4 @@
-#These are compound data types and ordered sequences
+#These are compound data types, and ordered sequences of different objects
 
 #Tuple: an inmutable sequence written with commas and parentheses
 my_tup=(10,'tuple',0,-1.4,True)
