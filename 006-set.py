@@ -27,3 +27,11 @@ uni #{0, 1, 'grunge', 'rock'}
 #To check if a set is a subset, .issubset():
 inter.issubset(aset) #True
 aset.issubset(inter) #False
+#To check if a set is a superset, .issuperset():
+inter.issuperset(aset) #False
+aset.issuperset(inter) #True
+#To differentiate, .difference():
+diff=aset.difference(inter,my_set)
+diff #{0}
+#To sum own items, sum():
+sum(inter) #1
