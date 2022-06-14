@@ -3,6 +3,9 @@
 #There are many pre-existing functions to import into your code
 
 #Python has many built-in functions:
+#To print, print():
+cars=['one',2,'three',4,'five']
+print(cars) #['one', 2, 'three', 4, 'five']
 #To return the length of a type sequence or type collection, len(type):
 len([0,1,2]) #3
 len('my house') #8
@@ -53,6 +56,11 @@ def mul(a,b):
   return a*b #To return the output directly
 mul(4,5) #20
 mul('a',4) #'aaaa'
+#To set a default input:
+def add1(a=0): 
+  return a+1
+add1() #1
+add(1) #2
 def py():
   print('python3 is good')
   #a function without return
@@ -67,7 +75,8 @@ def printElements(var):
 printElements(var_2)
 #index: 0 element: my house
 #index: 1 element: your house
-#To input a variable number of elements, *input:
+#To input a variable number of elements:
+#First, they will be packed into a tuple, with *:
 def printElements2(*var):
   for e in var:
     print(e)
@@ -77,6 +86,13 @@ printElements2(['hola','lola']) #['hola', 'lola']
 printElements2(1,2)
 #1
 #2
+#Now, they will be packed into a dictionary, with **:
+def printDict(**di):
+  for key in di:
+    print('key:',key,':: value:',di[key])
+printDict(America='Peru',Asia='Nepal')
+#key: America :: value: Peru
+#key: Asia :: value: Nepal
 #Variables that are defined outside of any function
 #are within the global scope, Global Variables:
 #they can be accessed anywhere after they are defined
