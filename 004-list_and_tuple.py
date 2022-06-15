@@ -54,9 +54,12 @@ my_list #['hola', 20, 4, 1.8, 'hace', False, [1, 2, 3]]
 del(my_list[4])
 my_list #['hola', 20, 4, 1.8, False, [1, 2, 3]]
 #To convert a string to a list, .split():
-'hola, ¿qué haces?'.split() #['hola,', '¿qué', 'haces?']
 #without an argument, the separation is by a space
+'hola, ¿qué haces?'.split() #['hola,', '¿qué', 'haces?']
 '1, 2, 3, 4'.split(',') #['1', ' 2', ' 3', ' 4']
+#To count an item, .count():
+my_list.count('hola') #1
+my_list.count(1) #0
 #If a new list is defined with a created list,
 #both reference the same elements, also called Aliasing,
 #with the possibility of changing elements
@@ -64,11 +67,11 @@ other_list=my_list
 other_list[4]=True
 my_list #['hola', 20, 4, 1.8, True, [1, 2, 3]]
 #To clone a list, [:]:
+#Both lists are independent
 your_list=my_list[:]
 your_list[4]='Undefined'
 my_list #['hola', 20, 4, 1.8, True, [1, 2, 3]]
 your_list #['hola', 20, 4, 1.8, 'Undefined', [1, 2, 3]]
-#Both lists are independent
 
 #To get more info on data structure, use help():
 help(your_list) #to more help, press 'h'. to exit, press 'q'
