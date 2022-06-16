@@ -75,3 +75,11 @@ your_list #['hola', 20, 4, 1.8, 'Undefined', [1, 2, 3]]
 
 #To get more info on data structure, use help():
 help(your_list) #to more help, press 'h'. to exit, press 'q'
+
+#To add items from a line:
+members=['Member  Date  Active  \n', '19532      2020-9-10    yes\n', '34202      2018-2-11    no\n', '45397      2020-8-7     yes\n', '12545      2016-7-17    yes\n', '11599      2016-11-24   yes\n', '17791      2016-2-20    yes\n', '30200      2020-4-10    yes\n', '29023      2017-6-19    yes\n', '95126      2020-4-2     no\n', '80321      2019-10-4    yes\n', '64116      2018-10-9    no\n', '78268      2015-4-23    no\n']
+inac = [mem for mem in members if ('no' in mem)]
+#equal to:
+#for mem in members:
+#  if 'no' in mem:
+#    inactive.append(mem)
