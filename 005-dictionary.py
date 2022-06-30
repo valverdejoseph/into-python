@@ -21,3 +21,7 @@ type(dic.keys()) #<class 'dict_keys'>
 #To see all values, .values():
 dic.values() #dict_values(['real madrid', 'bayern munich', 'ajax'])
 type(dic.values()) #<class 'dict_values'>
+#To merge two dicts:
+dic2={"argentina":"river plate","brasil":"flamengo","peru":"universitario"}
+dic_merge={**dic,**dic2}
+dic_merge #{'spain': 'real madrid', 'germany': 'bayern munich', 'netherlands': 'ajax', 'argentina': 'river plate', 'brasil': 'flamengo', 'peru': 'universitario'}
