@@ -77,3 +77,28 @@ z=x+8
 z #array([11.2, 12. ])
 
 #Universal functions: They operate on N-dimensional arrays
+arr0=np.array([1,2,2,1,-1])
+#To return the mean or average value, .mean():
+mean_0=arr0.mean()
+mean_0 #1.0
+#To return the maximum value, .max():
+max_0=arr0.max()
+max_0 #2
+#To return the value of Pi, np.pi:
+the_pi=np.pi
+the_pi #3.141592653589793
+#To return the function sin(x) with x in radians, .sin():
+sin_0=np.sin(arr0)
+sin_0 #array([ 0.84147098,  0.90929743,  0.90929743,  0.84147098, -0.84147098])
+#To return spaced numbers over an interval, .linspace():
+arr1=np.linspace(-10,10,num=8)
+arr1 #array([-10.        ,  -7.14285714,  -4.28571429,  -1.42857143,   1.42857143,   4.28571429,   7.14285714,  10.        ])
+#Another example:
+x=np.linspace(0,2*np.pi,5)
+y=np.sin(x)
+import matplotlib.pyplot as plt #to plot the function
+#To install, in terminal: pip install matplotlib
+plt.plot(x,y)
+plt.show() #This opens in a window
+#If you are in a jupyter notebook, try with:
+%matplotlib inline #and plt.plot(x,y)
