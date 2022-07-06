@@ -1,5 +1,9 @@
-#Numpy is a library for scientific computing, and also the basis for Pandas
+#Numpy (Numerical Python) is a library for scientific computing
+#(arrays, linear algebra, fourier transform, and matrices),
+#and also the basis for Pandas
 import numpy as np
+#Checking numpy version:
+print(np.__version__)
 #To create a one-dimensional Numpy array, np.array([]):
 arr=np.array([1,3,5,7,9])
 #each item is of the same type
@@ -35,7 +39,7 @@ arreal #array([  3.14, 500.  ,   3.4 ,  10.  ])
 #Vector addition with Numpy:
 x=np.array([1,0])
 y=np.array([0,1])
-z=x+y
+z=x+y #or np.add()
 z #array([1, 1])
 #Vector addition with regular Python:
 x=[1,0]
@@ -46,11 +50,12 @@ z=[]
 for i,j in zip(x,y):
   z.append(i+j)
 z #[1, 1]
-#Vector subtraction is similar
+#Vector subtraction is similar, np.subtract()
 #Vector multiplication with a scalar with Numpy:
 x=np.array([0.2,5])
-z=2*x
+z=2*x #or np.multliply()
 z #array([ 0.4, 10. ])
+#Vector division is similar, np.divide()
 #Vector multiplication with a scalar with regular Python:
 z=[]
 for i in x:
@@ -81,9 +86,15 @@ arr0=np.array([1,2,2,1,-1])
 #To return the mean or average value, .mean():
 mean_0=arr0.mean()
 mean_0 #1.0
+#To get the standard deviation, .std():
+std_0=arr0.std()
+std_0 #1.0954451150103321
 #To return the maximum value, .max():
 max_0=arr0.max()
 max_0 #2
+#To get the minimum value, .min():
+min_0=arr0.min()
+min_0 #-1
 #To return the value of Pi, np.pi:
 the_pi=np.pi
 the_pi #3.141592653589793
