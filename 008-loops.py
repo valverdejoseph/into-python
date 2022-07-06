@@ -47,3 +47,18 @@ while (i<teams_size and teams[i]!='win' and teams[i]!='lose'):
   i+=1
 #3 match team: milan
 #4 match team: inter
+#The KeepGoing Loop:
+keepgoing=True
+temp=4
+while keepgoing:
+  print('This is the KeepGoing loop.')
+  if temp<=0:
+    print('This is the last output.')
+    keepgoing=False
+  temp-=1
+#This is the KeepGoing loop.
+#This is the KeepGoing loop.
+#This is the KeepGoing loop.
+#This is the KeepGoing loop.
+#This is the KeepGoing loop.
+#This is the last output.
