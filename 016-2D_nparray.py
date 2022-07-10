@@ -15,11 +15,14 @@ arr_np.ndim #2
 arr_np.shape #(3, 3)
 #To return the size of the array, .size:
 arr_np.size #9
-#To access to an item, [][] (a pair for dimension):
+#To access to an item, [][] (a pair for dimension) or [,]:
 arr_np[1][2] #30.0
-#To slicing, [:,:]:
+arr_np[1,2] #30.0
+#To slicing, [:,:] or [:][:]:
 arr_np[1,1:3] #array([20., 30.])
 arr_np[1:3,0] #array([10. , 11.1])
+arr_np[1][1:3] #array([20., 30.])
+arr_np[1:3][0] #array([10., 20., 30.])
 #To add two arrays, +:
 a=np.array([[0,1],[0,1]])
 b=np.array([[10,11],[11,10]])
@@ -41,3 +44,13 @@ y=np.array([[2,0,1,2],[2,1,1,0]])
 z=np.dot(x,y)
 z #array([[6, 1, 3, 4],
   #       [6, 1, 3, 4]])
+#To calculate the sin, np.sin():
+sin_z=np.sin(z)
+sin_z #array([[-0.2794155 ,  0.84147098,  0.14112001, -0.7568025 ],
+      #       [-0.2794155 ,  0.84147098,  0.14112001, -0.7568025 ]])
+#To calculate the transposed matrix, .T:
+z_t=z.T
+z_t #array([[6, 6],
+    #       [1, 1],
+    #       [3, 3],
+    #       [4, 4]])
